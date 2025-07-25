@@ -15,6 +15,15 @@ public class HomePage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+      
+	
+	@FindBy(xpath="//select[@id='qccombo']")
+	private WebElement QukLnk;
+	
+	public WebElement getQukLnk() {
+		return QukLnk;
+	}
+
 
 	@FindBy(linkText = "Calendar")
 	private WebElement calLnk;
@@ -97,7 +106,7 @@ public class HomePage {
 	}
 
 	public WebElement getEmaLnk() {
-		return EmaLnk;
+		return EmaLnk1;
 	}
 
 	public WebElement getTtiLnk() {
