@@ -11,6 +11,15 @@ public class oppertunityInfoPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	//extra
+	@FindBy(xpath="//select[@id='bas_searchfield']")
+	private WebElement searchBtn;
+	
+	public WebElement getSearchBtn() {
+		return searchBtn;
+	}
+
 	@FindBy(xpath="//span[@class='dvHeaderText']")
 	private WebElement headermsg;
 	
